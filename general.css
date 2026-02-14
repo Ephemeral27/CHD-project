@@ -1,0 +1,129 @@
+.guide-page{
+    background: linear-gradient(to bottom,white,#d6c8b1, white);
+    background-repeat: no-repeat;      /* Prevent repeating */
+    background-attachment: fixed;      /* Optional: make gradient stay on scroll */
+    background-size: cover; 
+}
+
+table, td{
+    /*border:2px solid yellow;*/
+}
+table{
+    width:70%;
+    display: flex;
+    justify-content: center;
+}
+div{
+    height: 30%;
+}
+#center-row{
+    /*display:flex;
+    justify-content:center;*/
+    display: flex;        /* Make it a flex container */
+    width: 100%;          /* Take full width of the container */
+}
+.cell {
+  flex: 1;              /* Each cell takes equal space */
+  /*border: 2px solid black;*/
+  padding: 8px;
+  box-sizing: border-box; /* Include padding/border in width */
+  text-align: center;
+}
+
+.pathway{
+    height: 30px;
+}
+tr.pathway-row {
+    display: flex;           /* Make the row a flex container */
+    justify-content: center; /* Centers cells horizontally */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+tr.pathway-row td {
+    flex: 1;   
+    margin-left: 5px;
+    margin-right: 5px;
+                 
+}
+
+table td{
+    width:12.5%;
+}
+#topic{
+    border:4px outset #402615;
+    padding:10px;
+    border-radius: 20px;
+}
+#lower-middle{
+    border-left: 5px dotted #402615;
+    border-right: 5px dotted #402615;
+}
+#lower-left{
+    border-top: 5px dotted #402615;
+    border-left: 5px dotted #402615;
+    margin-right: 20px;
+}
+#upper-left{
+    border-bottom: 5px dotted #402615;
+    border-left: 5px dotted #402615;
+    margin-right: 20px;
+}
+
+#lower-right{
+    border-top: 5px dotted #402615;
+    border-right: 5px dotted #402615;
+    margin-left: 20px;
+}
+#upper-right{
+    border-bottom: 5px dotted #402615;
+    border-right: 5px dotted #402615;
+    margin-left: 20px;
+}
+
+.subtopic{
+    /*border:4px outset #578679;*/
+}
+
+/* Make the outer button fill the table cell */
+.pushable {
+  display: block;          /* Makes the button behave like a block element */
+  width: 95%;             /* Take full width of the <td> */
+  height: 95%;            /* Take full height of the <td> */
+  background: #280004;
+  border-radius: 12px;
+  border: none;
+  padding: 0;              /* Remove default padding */
+  cursor: pointer;
+  outline-offset: 4px;
+}
+
+/* Inner front face fills the button */
+.front {
+  display: flex;               /* Use flex to center content */
+  align-items: center;         /* Vertical centering */
+  justify-content: center;     /* Horizontal centering */
+  width: 95%;                 /* Fill full width of the button */
+  height: 95%;                /* Fill full height of the button */
+  border-radius: 12px;         /* Match button's rounded corners */
+  font-size: 1.25rem;
+  background: #bea683;
+  color: #280004;
+  transform: translateY(-6px);
+  border:4px outset #d6c8b1;
+}
+
+/* Active (pressed) state */
+.pushable:active .front {
+  transform: translateY(-2px);
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;  /* Adjust this number to control spacing */
+}
+
+
+
+/* end of guide page css*/
