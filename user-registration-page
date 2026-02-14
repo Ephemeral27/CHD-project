@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>User Registration</title>
+    <link rel="stylesheet" href="user-regestration-page.css">
 </head>
 <body>
 
@@ -10,16 +11,16 @@
     <form onsubmit="registerUser(event)">
 
         <label>First Name:</label><br>
-        <input type="text" id="fname" required><br><br>
+        <input type="text" id="fname" required><br>
 
         <label>Last Name:</label><br>
-        <input type="text" id="lname" required><br><br>
+        <input type="text" id="lname" required><br>
 
         <label>Email:</label><br>
-        <input type="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address." required> <br><br><br>
+        <input type="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address." required> <br>
 
         <label>Password:</label><br>
-        <input type="password" id="password" pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,16}$" title="Password must be 8-16 characters, include 1 uppercase, 1 number, and 1 special character" required><br><br>
+        <input type="password" id="password" pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,16}$" title="Password must be 8-16 characters, include 1 uppercase, 1 number, and 1 special character" required><br>
 
         <button type="submit">Sign Up</button>
 
