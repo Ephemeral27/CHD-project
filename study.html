@@ -19,9 +19,9 @@
                         </tr>
                     </thead>
                 <tr>
-                    <td>Pomodoros completed:<br>0</td> <!--Tracks how many times the pomodoro bar reaches the end with a ++ function-->
+                    <td>Pomodoros completed:<br><span id="pomoCount"></span>0</td> <!--Tracks how many times the pomodoro bar reaches the end with a ++ function-->
                     <td>Time studied<br><span id="minutes">00</span>:<span id="seconds">00</span></td> <!--every second that increases on the pomodoro timer this increases as well, just it doesnt reset everytime it hits an hour-->
-                    <td>breaks taken<br>0</td> <!--Tracks how many breaks were taken by adding how many times the stop button was pressed-->
+                    <td>breaks taken<br> <span id="breakCount"> 0 </span> </td> <!--Tracks how many breaks were taken by adding how many times the stop button was pressed-->
                 </tr>
             </table>
         </div>
@@ -99,4 +99,5 @@ document.getElementById("reset-btn").onclick = function () {
         
     </footer>
 </html>
+
 
