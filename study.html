@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Study page</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="study.css">
+    </head>
+
+    <header>SAMPLE</header>
+    <body style=text-align:center>
+        <h1 class="title-study">Your Personal Studying Hub</h1>
+
+        <!--Stat Table-->
+        <div class="stats-container">
+            <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th colspan="3">Your Stats</th> <!-- spans all 3 columns -->
+                        </tr>
+                    </thead>
+                <tr>
+                    <td>Pomodoros completed:<br>0</td> <!--Tracks how many times the pomodoro bar reaches the end with a ++ function-->
+                    <td>Time studied<br><span id="minutes">00</span>:<span id="seconds">00</span></td> <!--every second that increases on the pomodoro timer this increases as well, just it doesnt reset everytime it hits an hour-->
+                    <td>breaks taken<br>0</td> <!--Tracks how many breaks were taken by adding how many times the stop button was pressed-->
+                </tr>
+            </table>
+        </div>
+        <!-- POMODORO INTERACTIVE TIMER -->
+         <div class="pomodoro-container">
+            <h3>POMODORO STUDY TIMER</h3>
+            <!-- Timer Display -->
+             <div id="pomodoro-display">
+                <span id="pomodoro-minutes">00</span>:<span id="pomodoro-seconds">00</span>
+            </div>
+            <!-- Progress Bar -->
+             <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <!-- Control Buttons -->
+             <div class="pomodoro-buttons">
+                <button id="start-btn">Start</button>
+                <button id="stop-btn">Stop</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+        </div>
+
+
+
+
+    </body>
+
+    <footer>
+        
+    </footer>
+</html>
