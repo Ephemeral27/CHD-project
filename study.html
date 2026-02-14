@@ -46,50 +46,92 @@
 
          <script>
 
-let time = 1500; 
-let interval = null;
+const sessionLength = 1500; 
+let secondsLeft = sessionLength;
+let timer = null;
 
-const minutes = document.getElementById("pomodoro-minutes");
-const seconds = document.getElementById("pomodoro-seconds");
+let pomodoros = 0;
+let breaks = 0;
+let studiedSeconds = 0;
+
+const pomodoroMinutes = document.getElementById("pomodoro-minutes");
+const pomodoroSeconds = document.getElementById("pomodoro-seconds");
+
+const pomodoroCount = document.getElementById("pomoCount");
+const breakCount = document.getElementById("breakCount");
+const studyMinutes = document.getElementById("minutes");
+const studySeconds = document.getElementById("seconds");
+
+const progressBar = document.getElementById("progress-fill");
+
 
 document.getElementById("start-btn").onclick = function () {
-    if (interval !== null) return;
 
-    interval = setInterval(function () {
-        time--;
+    if (timer !== null) return;
 
-        let m = Math.floor(time / 60);
-        let s = time % 60;
+    timer = setInterval(function () {
 
-        minutes.innerText = m;
-        seconds.innerText = s < 10 ? "0" + s : s;
+        secondsLeft--;
+        studiedSeconds++;
 
-        if (time <= 0) {
-            clearInterval(interval);
-            interval = null;
+        let minutes = Math.floor(secondsLeft / 60);
+        let seconds = secondsLeft % 60;
+
+        pomodoroMinutes.innerText = minutes < 10 ? "0" + minutes : minutes;
+        pomodoroSeconds.innerText = seconds < 10 ? "0" + seconds : seconds;
+
+        let percent = ((sessionLength - secondsLeft) / sessionLength) * 100;
+        progressBar.style.width = percent + "%";
+
+        let totalMinutes = Math.floor(studiedSeconds / 60);
+        let totalSeconds = studiedSeconds % 60;
+
+        studyMinutes.innerText = totalMinutes < 10 ? "0" + totalMinutes : totalMinutes;
+        studySeconds.innerText = totalSeconds < 10 ? "0" + totalSeconds : totalSeconds;
+
+        if (secondsLeft <= 0) {
+            clearInterval(timer);
+            timer = null;
+            secondsLeft = 0;
+            pomodoros++;
+            pomodoroCount.innerText = pomodoros;
             alert("Session finished!");
         }
 
     }, 1000);
 };
 
+
 document.getElementById("stop-btn").onclick = function () {
-    clearInterval(interval);
-    interval = null;
+
+    if (timer !== null) {
+        clearInterval(timer);
+        timer = null;
+        breaks++;
+        breakCount.innerText = breaks;
+    }
+
 };
+
 
 document.getElementById("reset-btn").onclick = function () {
-    clearInterval(interval);
-    interval = null;
-    time = 1500;
-    minutes.innerText = "25";
-    seconds.innerText = "00";
+
+    clearInterval(timer);
+    timer = null;
+
+    secondsLeft = sessionLength;
+
+    pomodoroMinutes.innerText = "25";
+    pomodoroSeconds.innerText = "00";
+    progressBar.style.width = "0%";
 };
 
+</script>
 
 
-    </script>
 
+
+         
 
 
 
@@ -99,5 +141,6 @@ document.getElementById("reset-btn").onclick = function () {
         
     </footer>
 </html>
+
 
 
