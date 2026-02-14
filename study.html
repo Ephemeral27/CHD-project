@@ -44,6 +44,52 @@
             </div>
         </div>
 
+         <script>
+
+let time = 1500; 
+let interval = null;
+
+const minutes = document.getElementById("pomodoro-minutes");
+const seconds = document.getElementById("pomodoro-seconds");
+
+document.getElementById("start-btn").onclick = function () {
+    if (interval !== null) return;
+
+    interval = setInterval(function () {
+        time--;
+
+        let m = Math.floor(time / 60);
+        let s = time % 60;
+
+        minutes.innerText = m;
+        seconds.innerText = s < 10 ? "0" + s : s;
+
+        if (time <= 0) {
+            clearInterval(interval);
+            interval = null;
+            alert("Session finished!");
+        }
+
+    }, 1000);
+};
+
+document.getElementById("stop-btn").onclick = function () {
+    clearInterval(interval);
+    interval = null;
+};
+
+document.getElementById("reset-btn").onclick = function () {
+    clearInterval(interval);
+    interval = null;
+    time = 1500;
+    minutes.innerText = "25";
+    seconds.innerText = "00";
+};
+
+
+
+    </script>
+
 
 
 
@@ -53,3 +99,4 @@
         
     </footer>
 </html>
+
