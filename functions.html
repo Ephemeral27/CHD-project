@@ -1,0 +1,78 @@
+<h4>🟣 Functions</h4>
+
+<p>Functions are reusable blocks of code.</p>
+
+---
+
+<h5>🔹 Function Declaration</h5>
+
+<pre><code>
+function greet() {
+  console.log("Hi");
+}
+</code></pre>
+
+---
+
+<h5>🔹 Function Expression</h5>
+
+<pre><code>
+const greet = function() {
+  console.log("Hi");
+};
+</code></pre>
+
+---
+
+<h5>🔹 Arrow Function</h5>
+
+<p>Shorter way to write functions:</p>
+
+<pre><code>
+const greet = () => {
+  console.log("Hi");
+};
+</code></pre>
+
+---
+
+<h5>🔹 Parameters</h5>
+
+<p>Inputs to a function.</p>
+
+<pre><code>
+function greet(name) {
+  console.log(name);
+}
+
+greet("Salma");
+</code></pre>
+
+---
+
+<h5>🔹 Return Value</h5>
+
+<p>Returns a result from a function.</p>
+
+<pre><code>
+function add(a, b) {
+  return a + b;
+}
+
+let result = add(2, 3);
+console.log(result);
+</code></pre>
+
+---
+
+<h5>🔹 Default Parameters</h5>
+
+<p>Fallback values if no argument is passed.</p>
+
+<pre><code>
+function greet(name = "Guest") {
+  console.log(name);
+}
+
+greet(); // Guest
+</code></pre>
