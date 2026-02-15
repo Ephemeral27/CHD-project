@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f2ee;
+    text-align: center;
+    padding: 50px 20px;
+}
+h1 {
+    font-size: 48px;
+    color: #7d5e3c; /* matches table header */
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,1);
+}
+
+form {
+    display: inline-block;
+    background: #bea683; /* matches table cells */
+    padding: 40px 60px;
+    border-radius: 15px;
+    border: solid black;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    min-width: 320px;
+}
+
+/* Labels */
+form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #4a3b2a;
+}
+
+/* Inputs */
+form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #7d5e3c;
+    border: solid black;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Buttons */
+form button {
+    background: #7d5e3c; /* table header color */
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    border: solid black;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background 0.5s;
+}
+
+form button:hover {
+    background: #5c452c;
+}
