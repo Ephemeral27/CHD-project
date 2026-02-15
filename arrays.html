@@ -1,0 +1,81 @@
+<h4>🟤 Arrays</h4>
+
+<h5>🔹 Array</h5>
+
+<p>An array is a list of values.</p>
+
+<pre><code>
+let fruits = ["apple", "banana"];
+</code></pre>
+
+---
+
+<h5>🔹 Basic Methods</h5>
+
+<p><strong>.push()</strong> → Add to end</p>
+
+<pre><code>
+fruits.push("orange");
+</code></pre>
+
+<p><strong>.pop()</strong> → Remove from end</p>
+
+<pre><code>
+fruits.pop();
+</code></pre>
+
+<p><strong>.shift()</strong> → Remove from beginning</p>
+
+<pre><code>
+fruits.shift();
+</code></pre>
+
+<p><strong>.unshift()</strong> → Add to beginning</p>
+
+<pre><code>
+fruits.unshift("mango");
+</code></pre>
+
+---
+
+<h5>🔹 Advanced Methods</h5>
+
+<p><strong>.map()</strong> → Transforms each item</p>
+
+<pre><code>
+let numbers = [1, 2, 3];
+
+let doubled = numbers.map(num => num * 2);
+</code></pre>
+
+---
+
+<p><strong>.filter()</strong> → Keeps items that match a condition</p>
+
+<pre><code>
+let adults = [12, 25, 17, 30].filter(age => age > 18);
+</code></pre>
+
+---
+
+<p><strong>.reduce()</strong> → Combines items into one value</p>
+
+<pre><code>
+let sum = [1, 2, 3].reduce((total, num) => total + num, 0);
+</code></pre>
+
+---
+
+<p><strong>.forEach()</strong> → Loops through items</p>
+
+<pre><code>
+fruits.forEach(fruit => console.log(fruit));
+</code></pre>
+
+---
+
+<p><strong>.find()</strong> → Finds first matching item</p>
+
+<pre><code>
+let result = [10, 20, 30].find(num => num > 15);
+</code></pre>
