@@ -1,0 +1,190 @@
+/* =========================
+   GLOBAL FONT DEFAULTS
+   ========================= */
+
+body {
+  font-family: "Lora", serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, white, #d6c8b1, white);
+  background-repeat: no-repeat;
+  color: #402615; /* matches nav & headers */
+}
+
+/* Titles / Headings (EXCEPT brand) */
+h1:not(.brand-text h1),
+h2, h3, h4, h5, h6 {
+  font-family: "Libre Baskerville", serif;
+  margin: 0 0 15px 0;
+  color: #402615;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  padding-bottom: 1px;
+  padding-top: 5px;
+  border-radius: 15px;
+  border: 4px solid #402615; /* updated */
+  background-color: antiquewhite; /* updated */
+  margin: 20px;
+}
+
+.left, .center, .right {
+  flex: 1;
+}
+
+.left { text-align: left; }
+.center { text-align: center; }
+.right { text-align: right; }
+
+
+.page-title {
+  margin: 0;
+  font-size: 50px; /* updated to match Home page */
+}
+
+/* =========================
+   BRAND (logo + BrightPath)
+   ========================= */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand-text {
+  font-family: Arial, sans-serif; /* locked */
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  color: #7d5e3c; /* updated */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.brand-text h1 {
+  margin: 0;
+  font-size: 28px; /* updated to match Home page */
+}
+
+.tagline {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  color: #4a3b2a;
+}
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px; /* updated */
+  color: #402615;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   PAGE CONTENT (ABOUT SECTIONS)
+   ========================= */
+
+.about-page section {
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: antiquewhite; /* updated */
+  padding: 10px 10px;
+  border-radius: 12px;
+  border: 4px solid #402615; /* updated */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Section headings */
+.about-page h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #7d5e3c; /* updated */
+}
+
+/* Horizontal rule style */
+hr {
+  border: none;
+  border-top: 2px solid #402615;
+  margin: 40px auto;
+  width: 80%;
+}
+
+/* =========================
+   TEAM SECTION
+   ========================= */
+
+.team-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.team-member {
+  background-color: antiquewhite; /* updated */
+  border: 4px solid #402615; /* updated */
+  border-radius: 12px;
+  padding: 15px;
+  width: 220px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.team-member details summary {
+  font-weight: bold;
+  font-family: "Libre Baskerville", serif;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.team-member details p {
+  font-family: "Lora", serif;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-top: 5px;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+  background-color: antiquewhite; /* updated */
+  margin: 25px;
+  padding: 10px;
+  border: 3px solid #402615; /* updated */
+  border-radius: 12px;
+  text-align: center;
+  font-family: "Lora", serif;
+  color: #402615;
+}
