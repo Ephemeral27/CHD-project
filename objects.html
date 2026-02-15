@@ -1,0 +1,82 @@
+<h4>🔵 Objects</h4>
+
+<h5>🔹 Object Basics</h5>
+
+<p>An object stores related data together as key-value pairs.</p>
+
+<pre><code>
+let person = {
+  name: "Salma",
+  age: 16
+};
+</code></pre>
+
+---
+
+<h5>🔹 Object Properties</h5>
+
+<p>Data stored inside objects.</p>
+
+<pre><code>
+console.log(person.name);
+console.log(person.age);
+</code></pre>
+
+---
+
+<h5>🔹 Dot vs Bracket Notation</h5>
+
+<pre><code>
+// Dot notation
+person.name;
+
+// Bracket notation
+person["name"];
+</code></pre>
+
+<p><strong>Use bracket notation</strong> when the property name is dynamic.</p>
+
+---
+
+<h5>🔹 Nested Objects</h5>
+
+<p>Objects inside objects.</p>
+
+<pre><code>
+let user = {
+  name: "Salma",
+  address: {
+    city: "Toronto",
+    zip: 12345
+  }
+};
+
+console.log(user.address.city);
+</code></pre>
+
+---
+
+<h5>🔹 Destructuring</h5>
+
+<p>Quick way to extract values.</p>
+
+<pre><code>
+const { name, age } = person;
+
+console.log(name);
+</code></pre>
+
+---
+
+<h5>🔹 Spread Operator</h5>
+
+<p>Copies or merges objects.</p>
+
+<pre><code>
+const newPerson = { ...person };
+
+const updatedPerson = {
+  ...person,
+  age: 17
+};
+</code></pre>

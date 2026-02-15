@@ -1,9 +1,52 @@
+/* Brand section inside login form */
+.login-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+/* Brand text stack */
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* App name */
+.brand-title {
+  font-size: 32px;
+  margin: 0;
+  color: #7d5e3c;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+/* Tagline */
+.tagline {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  color: #4a3b2a;
+}
+
+/* Login heading */
+.login-title {
+  font-size: 30px;
+  font-weight: bold;    
+  margin: 20px 0;
+  color: #4a3b2a;
+  font-family: Arial, sans-serif;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     background: #f5f2ee;
     text-align: center;
     padding: 50px 20px;
+    background-image: url(Backgroundchdfin.jpg);
 }
+
 h1 {
     font-size: 48px;
     color: #7d5e3c; /* matches table header */
@@ -15,13 +58,15 @@ form {
     display: inline-block;
     background: #bea683; /* matches table cells */
     padding: 40px 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 15px;
     border: solid black;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     min-width: 320px;
 }
 
-/* Labels */
+/* Labels */    
 form label {
     display: block;
     text-align: left;

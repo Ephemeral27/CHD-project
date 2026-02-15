@@ -1,49 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
-    <link rel="stylesheet" href="user-regestration-page.css">
-
+  <title>Login</title>
+  <link rel="stylesheet" href="user-regestration-page.css">
 </head>
+
 <body>
 
+  <form onsubmit="loginUser(event)">
+
+    <!-- BRANDING -->
+    <div class="login-brand">
+      <img src="LOGO CHD2.png" alt="logo" width="60" height="60">
+
+      <div class="brand-text">
+        <h1 class="brand-title">BrightPath</h1>
+        <span class="tagline">Learn smarter. Stay on track.</span>
+      </div>
+    </div>
+
+    <!-- LOGIN TITLE -->
     <h1>Login</h1>
 
-    <form onsubmit="loginUser(event)">
-        <label>Email:</label><br>
-        <input type="email" id="email" required><br><br>
+    <label>Email:</label>
+    <input type="email" id="email" required>
 
-        <label>Password:</label><br>
-        <input type="password" id="password" required><br><br>
+    <label>Password:</label>
+    <input type="password" id="password" required>
 
-        <button type="submit">Login</button>
-    </form>
+    <button type="submit">Login</button>
 
     <p id="message"></p>
 
-    <script>
+    <p>Already have an account?
+        <a href="user-regestration-page.html">Sign up</a>
+    </p>
+  </form>
 
-        function loginUser(event) {
-            event.preventDefault();
+  <script>
+    function loginUser(event) {
+      event.preventDefault();
 
-            let email = document.getElementById("email").value;
-            let password = document.getElementById("password").value;
-            let storedEmail = "test@gmail.com";
-            let storedPassword = "Pwd123";
+      let email = document.getElementById("email").value;
+      let password = document.getElementById("password").value;
+      let storedEmail = "test@gmail.com";
+      let storedPassword = "Pwd123";
 
-            if (email === storedEmail && password === storedPassword) {
-            document.getElementById("message").innerText = "Login successful!";
-        
-        
+      if (email === storedEmail && password === storedPassword) {
+        document.getElementById("message").innerText = "Login successful!";
         localStorage.setItem("loggedInUser", email);
-
-        
         window.location.href = "home.html";
-    } else {
+      } else {
         document.getElementById("message").innerText = "Invalid email or password.";
+      }
     }
-}
-    </script>
+  </script>
 
 </body>
 </html>

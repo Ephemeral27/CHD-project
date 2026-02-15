@@ -1,0 +1,137 @@
+<h4>JavaScript Fundamentals</h4>
+
+<h5>🔹 Variables</h5>
+
+<p>A variable stores data.</p>
+
+<pre><code>
+let name = "Joan";
+</code></pre>
+
+---
+
+<h5>🔹 let</h5>
+
+<p>Used to create a variable that can change later.</p>
+
+<pre><code>
+let age = 16;
+age = 17;
+</code></pre>
+
+---
+
+<h5>🔹 const</h5>
+
+<p>Used to create a variable that cannot be reassigned.</p>
+
+<pre><code>
+const pi = 3.14;
+
+// ❌ This will cause an error:
+pi = 4;
+</code></pre>
+
+---
+
+<h5>🔹 Scope</h5>
+
+<p>Scope = where a variable exists.</p>
+
+<ul>
+  <li>Inside a function → only usable there</li>
+  <li>Inside { } → only usable there</li>
+</ul>
+
+<pre><code>
+function test() {
+  let message = "Hello";
+  console.log(message);
+}
+
+// console.log(message); ❌ error
+</code></pre>
+
+---
+
+<h5>🔹 Reassignment</h5>
+
+<p>Changing a variable’s value.</p>
+
+<pre><code>
+let score = 10;
+score = 20; // reassigned
+</code></pre>
+
+---
+
+<h5>🔹 Hoisting (Basic Idea)</h5>
+
+<p>JavaScript moves variable declarations to the top internally.</p>
+
+<p><strong>Important:</strong> <code>var</code> behaves differently because of hoisting — one reason to avoid it.</p>
+
+---
+
+<h4>🔵 Data Types</h4>
+
+<h5>🔹 String</h5>
+<pre><code>
+"Hello"
+</code></pre>
+
+<h5>🔹 Number</h5>
+<pre><code>
+10
+3.14
+</code></pre>
+
+<h5>🔹 Boolean</h5>
+<pre><code>
+true
+false
+</code></pre>
+
+<h5>🔹 Null</h5>
+<p>Intentional empty value.</p>
+
+<pre><code>
+let user = null;
+</code></pre>
+
+<h5>🔹 Undefined</h5>
+<p>A variable that has no value yet.</p>
+
+<pre><code>
+let x;
+</code></pre>
+
+<h5>🔹 Object</h5>
+<p>Stores related data together.</p>
+
+<pre><code>
+let person = {
+  name: "Salma",
+  age: 16
+};
+</code></pre>
+
+---
+
+<h4>Resources:</h4>
+
+<p><strong>Text-based:</strong></p>
+
+<a href="https://www.w3schools.com/js/js_variables.asp" target="_blank">
+  W3Schools – JavaScript Variables
+</a>
+
+<p><strong>Video-based:</strong></p>
+
+<a href="https://youtu.be/nbX0MIV7-Ek?si=gxmjgk3kqo19IJp4" target="_blank">
+  YouTube Tutorial 1
+</a><br>
+
+<a href="https://youtu.be/KyqmbIkZGIo?si=Q_2ELHGzQ5URWlZs" target="_blank">
+  YouTube Tutorial 2
+</a>
