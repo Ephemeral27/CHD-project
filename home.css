@@ -1,0 +1,142 @@
+/* =========================
+   GLOBAL STYLES
+   ========================= */
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Lora", serif;
+  background: linear-gradient(to bottom, white, #d6c8b1, white);
+  background-repeat: no-repeat;
+  color: #402615;
+}
+
+/* Titles (EXCEPT brand) */
+h1:not(.brand-text h1),
+h2, h3 {
+  font-family: "Libre Baskerville", serif;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 15px 30px;
+  border-radius: 15px;
+  border: 4px solid #402615;
+  background-color: antiquewhite;
+}
+
+.left, .center, .right {
+  flex: 1;
+}
+
+.left { text-align: left; }
+.center { text-align: center; }
+.right { text-align: right; }
+
+.page-title {
+  margin: 0;
+}
+header .page-title {
+  font-size: 50px;
+}
+
+/* =========================
+   BRAND (LOCKED FONT)
+   ========================= */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand-text {
+  font-family: Arial, sans-serif; /* DO NOT CHANGE */
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  color: #7d5e3c;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.brand-text h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.tagline {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  color: #4a3b2a;
+}
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: #402615;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   WELCOME BOX
+   ========================= */
+
+.welcome-box {
+  background-color: antiquewhite;
+  margin: 30px;
+  padding: 10px;
+  border: 4px solid #402615;
+  border-radius: 12px;
+}
+
+/* =========================
+   FEATURES
+   ========================= */
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+
+.feature {
+  background-color: antiquewhite;
+  padding: 10px;
+  width: 25%;
+  border-radius: 12px;
+  border: 4px solid #402615;
+}
+
+.feature h3 {
+  margin-top: 0;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+  background-color: antiquewhite;
+  margin: 25px;
+  padding: 10px;
+  border: 3px solid #402615;
+}
