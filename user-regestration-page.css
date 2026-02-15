@@ -1,4 +1,43 @@
-/* Brand section inside login form */
+/* =========================
+   GLOBAL FONT DEFAULTS
+   ========================= */
+
+body {
+  font-family: "Lora", serif;
+  background: #f5f2ee;
+  background-image: url(Backgroundchdfin.jpg);
+  text-align: center;
+  padding: 50px 20px;
+  margin: 0;
+}
+
+/* Page titles (Login / Create Account) */
+h1:not(.brand-title) {
+  font-family: "Libre Baskerville", serif;
+  font-size: 48px;
+  color: #7d5e3c;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,1);
+}
+
+/* =========================
+   FORM CARD
+   ========================= */
+
+form {
+  display: inline-block;
+  background: #bea683;
+  padding: 40px 60px 30px;
+  border-radius: 15px;
+  border: 2px solid black;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  min-width: 320px;
+}
+
+/* =========================
+   BRANDING (DO NOT TOUCH FONT)
+   ========================= */
+
 .login-brand {
   display: flex;
   align-items: center;
@@ -7,14 +46,13 @@
   margin-bottom: 25px;
 }
 
-/* Brand text stack */
 .brand-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-family: Arial, sans-serif;
 }
 
-/* App name */
 .brand-title {
   font-size: 32px;
   margin: 0;
@@ -22,86 +60,77 @@
   text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
 }
 
-/* Tagline */
 .tagline {
   font-size: 0.85rem;
   opacity: 0.8;
   color: #4a3b2a;
 }
 
-/* Login heading */
-.login-title {
-  font-size: 30px;
-  font-weight: bold;    
-  margin: 20px 0;
-  color: #4a3b2a;
-  font-family: Arial, sans-serif;
-}
+/* =========================
+   LABELS & INPUTS
+   ========================= */
 
-
-body {
-    font-family: Arial, sans-serif;
-    background: #f5f2ee;
-    text-align: center;
-    padding: 50px 20px;
-    background-image: url(Backgroundchdfin.jpg);
-}
-
-h1 {
-    font-size: 48px;
-    color: #7d5e3c; /* matches table header */
-    margin-bottom: 30px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,1);
-}
-
-form {
-    display: inline-block;
-    background: #bea683; /* matches table cells */
-    padding: 40px 60px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 15px;
-    border: solid black;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    min-width: 320px;
-}
-
-/* Labels */    
 form label {
-    display: block;
-    text-align: left;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #4a3b2a;
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #4a3b2a;
 }
 
-/* Inputs */
 form input {
-    width: 100%;
-    padding: 12px 15px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    border: 1px solid #7d5e3c;
-    border: solid black;
-    font-size: 16px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 2px solid black;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: "Lora", serif;
 }
 
-/* Buttons */
+/* =========================
+   BUTTONS
+   ========================= */
+
 form button {
-    background: #7d5e3c; /* table header color */
-    color: #fff;
-    padding: 12px 25px;
-    font-size: 18px;
-    font-weight: bold;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    border: solid black;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    transition: background 0.5s;
+  background: #7d5e3c;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+  font-family: "Lora", serif;
 }
 
 form button:hover {
-    background: #5c452c;
+  background: #5c452c;
+}
+
+/* =========================
+   LINKS & MESSAGES
+   ========================= */
+
+form p {
+  margin-top: 15px;
+  color: #402615;
+}
+
+form a {
+  color: #402615;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+#message {
+  margin-top: 15px;
+  font-weight: bold;
 }

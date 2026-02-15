@@ -1,0 +1,93 @@
+<h4>🌐 The DOM (Where JS Meets HTML)</h4>
+
+<h5>🔹 Selecting Elements</h5>
+
+<pre><code>
+document.getElementById("id");
+
+document.querySelector(".class");
+
+document.querySelectorAll("p");
+</code></pre>
+
+---
+
+<h5>🔹 Modifying Elements</h5>
+
+<p><strong>Change text:</strong></p>
+
+<pre><code>
+element.textContent = "Hello";
+</code></pre>
+
+<p><strong>Change HTML:</strong></p>
+
+<pre><code>
+element.innerHTML = "&lt;b&gt;Hi&lt;/b&gt;";
+</code></pre>
+
+<p><strong>Change classes:</strong></p>
+
+<pre><code>
+element.classList.add("active");
+</code></pre>
+
+<p><strong>Change styles:</strong></p>
+
+<pre><code>
+element.style.color = "red";
+</code></pre>
+
+<p><strong>Set attributes:</strong></p>
+
+<pre><code>
+element.setAttribute("src", "image.jpg");
+</code></pre>
+
+---
+
+<h5>🔹 Event Listeners</h5>
+
+<p>Listen for user actions.</p>
+
+<pre><code>
+button.addEventListener("click", function() {
+  console.log("Clicked");
+});
+</code></pre>
+
+<p><strong>Common events:</strong></p>
+
+<ul>
+  <li>click</li>
+  <li>submit</li>
+  <li>input</li>
+  <li>keydown</li>
+  <li>change</li>
+</ul>
+
+---
+
+<h5>🔹 Event Object</h5>
+
+<p>Contains information about the event.</p>
+
+<pre><code>
+button.addEventListener("click", function(event) {
+  console.log(event);
+});
+</code></pre>
+
+---
+
+<h5>🔹 Event Bubbling (Basic Idea)</h5>
+
+<p>Events move upward through parent elements.</p>
+
+<p>If you click a button inside a div, the div also "hears" the click.</p>
+
+<pre><code>
+div.addEventListener("click", function() {
+  console.log("Div clicked");
+});
+</code></pre>
