@@ -135,6 +135,7 @@ hr{
 }
 
 .header-items{
+    font-size: 25px;
     display:flex;
     justify-content: center;
     font-family:'Libre Baskerville';
@@ -181,11 +182,11 @@ header {
 }
 
 .page-title {
-    font-size: 40px;
+    font-size: 30px;
     font-family:'Libre Baskerville';
     /*color: #3c4f76;*/
     color: #19381f;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    /*text-shadow: 1px 1px 2px rgba(0,0,0,0.8);*/
 }
 /* Logo + text container */
 .brand {
