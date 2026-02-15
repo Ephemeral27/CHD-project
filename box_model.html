@@ -1,0 +1,67 @@
+<h4>The Box Model</h4>
+
+<p>Every HTML element is a box.</p>
+
+<p><strong>It has:</strong></p>
+<ul>
+  <li><strong>Content</strong></li>
+  <li><strong>Padding</strong> → inside spacing</li>
+  <li><strong>Border</strong></li>
+  <li><strong>Margin</strong> → outside spacing</li>
+</ul>
+
+<h5>Example:</h5>
+
+<pre><code>
+div {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 10px;
+}
+</code></pre>
+
+---
+
+<h4>Content-box vs Border-box</h4>
+
+<p><strong>Default (content-box):</strong><br>
+Width does NOT include padding and border.</p>
+
+<p><strong>Better practice:</strong></p>
+
+<pre><code>
+box-sizing: border-box;
+</code></pre>
+
+<p>This makes layout easier and more predictable.</p>
+
+---
+
+<h4>Margin Collapse</h4>
+
+<p>Vertical margins can combine into one.</p>
+
+<p>This often confuses beginners because:</p>
+<ul>
+  <li>Two vertical margins may merge</li>
+  <li>The larger margin wins</li>
+</ul>
+
+---
+
+<h4>Resources:</h4>
+
+<p><strong>Text-based:</strong></p>
+
+<a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank">
+  W3Schools – CSS Box Model
+</a><br>
+
+<a href="https://www.w3schools.com/css/css_border.asp" target="_blank">
+  W3Schools – CSS Borders
+</a>
+
+<p><strong>Video-based:</strong></p>
+
+<!-- Add video links here if you choose -->
