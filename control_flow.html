@@ -1,0 +1,96 @@
+<h4>🟠 Control Flow</h4>
+
+<h5>🔹 if / else</h5>
+
+<p>Used to make decisions.</p>
+
+<pre><code>
+let age = 20;
+
+if (age > 18) {
+  console.log("Adult");
+} else {
+  console.log("Minor");
+}
+</code></pre>
+
+---
+
+<h5>🔹 switch</h5>
+
+<p>Cleaner way to check multiple cases.</p>
+
+<pre><code>
+let day = "Monday";
+
+switch (day) {
+  case "Monday":
+    console.log("Start of week");
+    break;
+  case "Friday":
+    console.log("Weekend soon!");
+    break;
+  default:
+    console.log("Regular day");
+}
+</code></pre>
+
+---
+
+<h5>🔹 for loop</h5>
+
+<p>Repeat something a certain number of times.</p>
+
+<pre><code>
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+</code></pre>
+
+---
+
+<h5>🔹 while loop</h5>
+
+<p>Repeat while something is true.</p>
+
+<pre><code>
+let i = 0;
+
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+</code></pre>
+
+---
+
+<h5>🔹 for...of</h5>
+
+<p>Loop through arrays.</p>
+
+<pre><code>
+let fruits = ["apple", "banana", "orange"];
+
+for (let fruit of fruits) {
+  console.log(fruit);
+}
+</code></pre>
+
+---
+
+<h5>🔹 for...in</h5>
+
+<p>Loop through object keys.</p>
+
+<pre><code>
+let person = {
+  name: "Salma",
+  age: 16
+};
+
+for (let key in person) {
+  console.log(key, person[key]);
+}
+</code></pre>
+
+<p><strong>Goal:</strong> You should feel comfortable repeating code using loops.</p>
