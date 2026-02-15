@@ -1,128 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> CHD Homepage </title>
-    <style>
-        body {
-        background: linear-gradient(to bottom, white, #d6c8b1, white);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover; 
-        font-family: "Lora", serif;
-        font-weight: bold;
-        text-align: center;
-        font-family: Arial, sans-serif;
-        border-radius: 15px;
-        color: #402615;
-        margin: 65px;
-        margin-top: -10px;
-    }
-        div {
-            background-color: antiquewhite;
-            margin: 15px;
-            margin-top: auto;
-            border: 2px solid #402615;
-            
-        }
-        header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        border-radius: 15px;
-        border: 1.5px solid #402615;
-        background-color: antiquewhite;
+  <title>BrightPath | Home</title>
+  <meta charset="utf-8">
 
-        
-    }
-    header h1 {
-    margin: 0;
-   
-    
+  <link rel="stylesheet" href="home.css">
 
-    }
-    nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: 5px solid #402615;
-    font-weight: bold;
-
-}
-    footer {
-        background-color: antiquewhite;
-        margin: 25px;
-        margin-top: auto;
-        border: 3px solid #402615;
-       
-
-    }  
-    .features {
-    display: flex;
-    justify-content: space-around;
-    padding: 40px 20px;
-    color: 5px solid #402615;
-}
-
-.feature {
-    background-color: antiquewhite;
-    padding: 20px;
-    width: 25%;
-    border-radius: 8px;
-}     
-  
-
-    </style> 
-
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-
 <header>
-    <h1> BrightPath </h1>
+  <!-- LEFT: BRAND -->
+  <div class="left">
+    <a href="home.html" class="brand">
+      <img src="LOGO CHD2.png" alt="BrightPath Logo" width="60" height="60">
 
+      <div class="brand-text">
+        <h1>BrightPath</h1>
+        <span class="tagline">Learn smarter. Stay on track.</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- CENTER: PAGE TITLE -->
+  <div class="center">
+    <h1 class="page-title">Home</h1>
+  </div>
+
+  <!-- RIGHT: NAV -->
+  <div class="right">
     <nav>
-    <a style=" color: #402615" href="guide.html"> Guide </a>
-    <a style=" color: #402615" href = "study.html"> Study </a>
-    <a style=" color: #402615" href= "about-us.html"> About Us </a>
-     <a style=" color: #402615" href= "help.html"> Help </a>
-    
-    
-
+      <a href="guide.html">Guide</a>
+      <a href="study.html">Study</a>
+      <a href="aboutus.html">About Us</a>
     </nav>
+  </div>
 </header>
-<br>
-<br>
 
-<div> <p> Welcome to Ctrl Hack Del! This is the spot where you can actually find everything you need to get your studying done without going in circles. From project ideas and guides to useful resources and tips, it’s all here in one place.
-
-Whether you’re trying to figure out a tricky assignment, need some inspiration for a project, or just want a few shortcuts to make life easier, Ctrl Hack Del has your back. No more digging through endless tabs or asking everyone in your group chat for help — we’ve got it all organized for you.
-
-Think of this as your go-to study buddy. </p>
+<!-- WELCOME SECTION -->
+<div class="welcome-box">
+    <p>Welcome to BrightPath! This is the spot where you can actually find everything you need to get your studying done without going in circles. From project ideas and guides to useful resources and tips, it’s all here in one place.</p>
+    <p>Think of this as your go-to study buddy - organized, helpful, and built to keep you moving forward. Track your study sessions, set timers for focused work, and monitor your progress over time.</p>
+    <p>Whether you’re tackling tricky assignments, looking for inspiration, or just want to stay on top of your work, BrightPath has your back. Spend less time searching and more time learning - efficiently and effectively.</p>
 </div>
+
+<!-- FEATURES -->
 <section class="features">
-    <div class="feature">
-        <h3>📚 Study Resources</h3>
-        <p>Access guides and materials for your courses.</p> <br> <br>
-<br> <br>
-    </div>
-    <div class="feature">
-        <h3>⏳ Focus Timer</h3>
-        <p>Use built-in tools to stay productive.</p> <br> <br> <br>
-<br> <br>
-    </div>
-    <div class="feature">
-        <h3>📈 Track Progress</h3>
-        <p>Monitor your improvement over time. </p> <br> <br> <br> <br>
-<br> <br>
-    </div>
+  <div class="feature">
+    <h3>📚 Study Resources</h3>
+    <p>Access guides and materials for your courses.  From info sheets to online learning resources, we give you the tools to understand concepts faster and stay ahead in your classes.</p>
+    <p>Quick links, curated tutorials, and downloadable resources make studying smarter, not harder.</p>
+  </div>
+
+  <div class="feature">
+    <h3>⏳ Focus Timer</h3>
+    <p>Stay on track with our built-in Pomodoro timer.  Set focused study sessions and scheduled breaks to maximize productivity without burning out.</p>
+    <p>Visual progress bars and alerts help you keep momentum and build consistent study habits.</p>
+  </div>
+
+  <div class="feature">
+    <h3>📈 Track Progress</h3>
+    <p>Monitor your improvement over time with detailed stats. See how many sessions you’ve completed, total study hours, and break patterns at a glance.</p>
+    <p>Tracking your progress helps you celebrate wins, identify weak spots, and stay motivated throughout the semester.</p>
+
+  </div>
 </section>
 
 <footer>
   <p>© 2026 BrightPath. All rights reserved.</p>
 </footer>
+
 </body>
 </html>
-
-
-
-
