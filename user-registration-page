@@ -6,9 +6,18 @@
 </head>
 <body>
 
-    <h1>Create Account</h1>
-
     <form onsubmit="registerUser(event)">
+        <div class="login-brand">
+      <img src="LOGO CHD2.png" alt="logo" width="60" height="60">
+
+      <div class="brand-text">
+        <h1 class="brand-title">BrightPath</h1>
+        <span class="tagline">Learn smarter. Stay on track.</span>
+      </div>
+    </div>
+
+    <!-- CREATE TITLE -->
+    <h1>Create Account</h1>
 
         <label>First Name:</label><br>
         <input type="text" id="fname" required><br>
@@ -23,14 +32,14 @@
         <input type="password" id="password" pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,16}$" title="Password must be 8-16 characters, include 1 uppercase, 1 number, and 1 special character" required><br>
 
         <button type="submit">Sign Up</button>
+        
+        <p id="message"></p>
+        
+        <p>Already have an account?
+            <a href="login.html">Login</a>
+        </p>
 
     </form>
-
-    <p id="message"></p>
-
-    <p>Already have an account?
-        <a href="login.html">Login</a>
-    </p>
 
     <script>
         function registerUser(event) {
