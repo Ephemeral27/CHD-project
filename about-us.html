@@ -1,108 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>About Us</title>
-  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="about-us.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
-
 <body class="about-page">
 
-  <h1>About Us</h1>
+  <!-- Header -->
+  <header>
+  <div class="left">
+    <a href="home.html" class="brand">
+      <img src="LOGO CHD2.png" alt="logo" width="60" height="60">
+      <div class="brand-text">
+        <h1>BrightPath</h1>
+        <span class="tagline">Learn smarter. Stay on track.</span>
+      </div>
+    </a>
+  </div>
 
+  <div class="center">
+    <h1 class="page-title">About Us</h1>
+  </div>
+
+  <div class="right">
+    <nav>
+      <a href="guide.html">Guide</a>
+      <a href="study.html">Study</a>
+      <a href="about-us.html">About us</a>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- About text -->
   <section>
-    <p>
-      StudyPlatform was created to make learning web development 
-      simple, structured, and accessible for everyone.
-    </p>
-
-    <p>
-      We provide step-by-step pathways, practical projects, and 
-      interactive tools like timers and XP tracking to help students 
-      stay focused and motivated.
-    </p>
-
-    <p>
-      Our goal is to turn confusion into clarity and make studying 
-      more organized and enjoyable.
-    </p>
+    <p>Welcome to BrightPath! We built this platform to make learning web development structured, fun, and easy to follow. Our goal is to help students stay focused, motivated, and confident while building real projects.</p>
+    <p>We provide step-by-step pathways, interactive tools like timers and XP tracking, and curated resources to keep learning organized and efficient.</p>
   </section>
 
-  <hr>
-
-  <section>
-    <h2>Our Mission</h2>
-    <p>
-      To empower learners with structured guidance, practical skills, 
-      and a clean learning experience.
-    </p>
+  <!-- Mission / Vision cards -->
+  <section class="about-cards">
+    <div class="feature-card">
+      <h2>Our Mission</h2>
+      <p>Empower learners with structured guidance, practical skills, and a clean, motivating learning experience.</p>
+    </div>
+    <div class="feature-card">
+      <h2>Our Vision</h2>
+      <p>Create a world where students feel confident, capable, and prepared to tackle real-world projects.</p>
+    </div>
   </section>
 
-  <hr>
-
-  <section>
-    <h2>Our Vision</h2>
-    <p>
-      A world where students feel confident, capable, and prepared 
-      to build real projects.
-    </p>
-  </section>
+  <!-- Team -->
   <section class="team-section">
+    <h2>Meet the Team</h2>
+    <div class="team-member">
+      <img src="https://businessfocus.co.ug/wp-content/uploads/2018/06/Dr.-Jane-Goodall-with-Zakayo-II.jpg" alt="Salma">
+      <details>
+        <summary>Salma Abedi</summary>
+        <p>Salma brings creativity and design thinking, making sure the platform feels clean and easy to use.</p>
+      </details>
+    </div>
 
-  <div class="team-member">
-    <img src="https://businessfocus.co.ug/wp-content/uploads/2018/06/Dr.-Jane-Goodall-with-Zakayo-II.jpg">
-    <details>
-      <summary>Salma Abdi</summary>
-      <p>
-        Salma brings creativity and design thinking, making sure 
-        the platform feels clean and easy to use.
-      </p>
-    </details>
-  </div>
+    <div class="team-member">
+      <img src="https://comicvine.gamespot.com/a/uploads/original/14/146991/2842253-brutus-grizzly-pet-casey-anderson-3.jpg" alt="Dom">
+      <details>
+        <summary>Dominik Lizak</summary>
+        <p>Dominik focuses on logic and functionality, ensuring everything works smoothly behind the scenes.</p>
+      </details>
+    </div>
 
-  <div class="team-member">
-    <img src="https://comicvine.gamespot.com/a/uploads/original/14/146991/2842253-brutus-grizzly-pet-casey-anderson-3.jpg">
-    <details>
-      <summary>Dom</summary>
-      <p>
-        Dom focuses on logic and functionality, ensuring everything 
-        works smoothly behind the scenes.
-      </p>
-    </details>
-  </div>
+    <div class="team-member">
+      <img src="https://images.template.net/wp-content/uploads/2015/04/17122916/Pet-Store-Prestashop-Themes1.jpg" alt="Sophia">
+      <details>
+        <summary>Sophia Pimenovsky</summary>
+        <p>Sophia contributes structure and organization, helping turn ideas into a clear learning roadmap.</p>
+      </details>
+    </div>
 
-  <div class="team-member">
-    <img src="https://images.template.net/wp-content/uploads/2015/04/17122916/Pet-Store-Prestashop-Themes1.jpg">
-    <details>
-      <summary>Sophia</summary>
-      <p>
-        Sophia contributes structure and organization, helping turn 
-        ideas into a clear learning roadmap.
-      </p>
-    </details>
-  </div>
+    <div class="team-member">
+      <img src="https://weu-az-web-cdnep.azureedge.net/mediacontainer/medialibraries/northwalesreferrals/images/gallery/gallery-5.jpg?ext=.jpg" alt="Fatoumata Sampil">
+      <details>
+        <summary>Fatoumata Sampil</summary>
+        <p>Fatoumata combines technical skills and vision, shaping the platform into an interactive and motivating learning experience.</p>
+      </details>
+    </div>
+  </section>
 
-  <div class="team-member">
-    <img src="https://weu-az-web-cdnep.azureedge.net/mediacontainer/medialibraries/northwalesreferrals/images/gallery/gallery-5.jpg?ext=.jpg">
-    <details>
-      <summary>Fatoumata Sampil</summary>
-      <p>
-        Fatoumata combines technical skills and vision, shaping the 
-        platform into an interactive and motivating learning experience.
-      </p>
-    </details>
-  </div>
+  <!-- Closing text -->
+  <section>
+    <p>Together, we built this project to help students stay focused, grow their skills, and feel confident while learning web development.</p>
+    <a href="home.html">Back to Home</a>
+  </section>
 
-</section> 
-
-  <p>
-  Together, we built this project to help students stay focused, grow their <br>
-  skills, and feel confident while learning web development.
-</p>
-
-  <br>
-  <a href="home.html">Back to Home</a>
+  <footer>
+    <p>© 2026 BrightPath. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
-
