@@ -138,7 +138,7 @@ hr{
     border: 2px outset #4d6e65;
 }
 
-h1, h2{
+.header-items{
     display:flex;
     justify-content: center;
     font-family:'Libre Baskerville';
@@ -149,4 +149,59 @@ footer{
     font-weight: normal;
     height:10%;
 }
+td a{
+    text-decoration: none;
+}
 /* end of guide page css*/
+
+/*nav stuff*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: 1.5px solid #402615;
+  background-color: antiquewhite;
+  color: #402615;
+}
+/* Logo + text container */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Title + tagline stacked */
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* App title */
+header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+/* Tagline */
+.tagline {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* Navigation links */
+nav a {
+  margin-left: 50px;
+  text-decoration: none;
+  color: #402615;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
