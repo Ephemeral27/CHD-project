@@ -7,9 +7,7 @@
     font-weight:bold;
 }
 
-table, td{
-    /*border:2px solid yellow;*/
-}
+
 table{
     width:70%;
     display: flex;
@@ -86,9 +84,7 @@ table td{
     margin-left: 20px;
 }
 
-.subtopic{
-    /*border:4px outset #578679;*/
-}
+
 
 /* Make the outer button fill the table cell */
 .pushable {
@@ -142,8 +138,8 @@ hr{
     display:flex;
     justify-content: center;
     font-family:'Libre Baskerville';
-    /*color: #5E6462;*/
-    color: #3c4f76;
+    /*color: #3c4f76;*/
+    color: #19381f;
 }
 footer{
     font-weight: normal;
@@ -158,13 +154,38 @@ td a{
 
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 5px 10px;
+  justify-content: space-between;
+  position: relative; /* just in case */
+  padding: 5px 30px;
+  font-family: Arial, sans-serif;
   border-radius: 15px;
   border: 1.5px solid #402615;
   background-color: antiquewhite;
   color: #402615;
+}
+
+.center {
+  flex: 1;
+  text-align: center;
+}
+
+.left {
+  flex: 1;
+  text-align: left;
+}
+
+.right {
+  flex: 1;
+  text-align: right;
+}
+
+.page-title {
+    font-size: 40px;
+    font-family:'Libre Baskerville';
+    /*color: #3c4f76;*/
+    color: #19381f;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
 }
 /* Logo + text container */
 .brand {
@@ -172,13 +193,16 @@ header {
   align-items: center;
   gap: 30px;
   text-decoration: none;
-  color: inherit;
 }
 
 /* Title + tagline stacked */
 .brand-text {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
+  color: #7d5e3c;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
 }
 
 /* App title */
@@ -191,11 +215,12 @@ header h1 {
 .tagline {
   font-size: 0.85rem;
   opacity: 0.8;
+  color: #4a3b2a;
 }
 
 /* Navigation links */
 nav a {
-  margin-left: 50px;
+  margin-left: 25px;
   text-decoration: none;
   color: #402615;
   font-weight: bold;
